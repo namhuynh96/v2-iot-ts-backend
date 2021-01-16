@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.deleteAWSBuilding = void 0;
 const iotConfig_1 = __importDefault(require("../../aws/iotConfig"));
 const building_1 = __importDefault(require("../../models/building"));
 const device_1 = __importDefault(require("../../models/device"));

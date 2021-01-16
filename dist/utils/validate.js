@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isDuplicatedElements = exports.isAwsIotPattern = void 0;
 const isAwsIotPattern = (value) => {
     const awsIotPattern = /^[a-zA-Z\d-_:]+$/;
     if (!awsIotPattern.test(value)) {
