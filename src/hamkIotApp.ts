@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(express.static(path.join("public")));
+app.use(express.static(path.join("frontend", "build")));
 
 app.use(adminRouter);
 app.use(userRouter);
@@ -22,7 +22,7 @@ app.use(roomRouter);
 app.use(deviceRouter);
 
 app.use((_req, res, _next) => {
-  res.sendFile(path.resolve(__dirname, "public", "index.html"));
+  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
 
 export default app;

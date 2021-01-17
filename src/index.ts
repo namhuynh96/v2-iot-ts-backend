@@ -1,4 +1,4 @@
-import app from './app';
+import app from "./hamkIotApp";
 const port = 10002;
 
 app.listen(port, () => {
