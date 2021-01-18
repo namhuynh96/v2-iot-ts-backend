@@ -12,6 +12,7 @@ checkDevicesConnected();
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join("frontend", "build")));
 
@@ -22,7 +23,7 @@ app.use(roomRouter);
 app.use(deviceRouter);
 
 app.use((_req, res, _next) => {
-  res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
+  res.sendFile(path.resolve("frontend", "build", "index.html"));
 });
 
 export default app;
