@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start dist/index.js",
-    "dev": "nodemon --ignore frontend dist/index.js"
+    "start": "pm2 start dist/hamkIot.js",
+    "dev": "nodemon --ignore frontend dist/hamkIot.js"
   },
   "author": "Nam Huynh",
   "license": "ISC",
